@@ -1,0 +1,38 @@
+.section__chef {
+  background-image: url(../assets/images/main-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+.chef__inner {
+  padding: 128px 190px;
+  display: flex;
+  img {
+    margin-right: 96px;
+  }
+}
+.chef-content__descr {
+  font-style: italic;
+}
+.chef__content {
+  padding-top: 87px;
+  dl {
+    padding-top: 32px;
+    margin-bottom: 64px;
+    dt {
+      font-family: $font-cormorant;
+      font-size: 32px;
+      line-height: $min-line-height;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      color: $font-color-gold;
+    }
+    dd {
+      font-family: $font-open;
+      line-height: $max-line-height;
+      letter-spacing: 0.04em;
+      color: $font-color-gray;
+    }
+  }
+}

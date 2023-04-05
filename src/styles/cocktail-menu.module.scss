@@ -1,0 +1,68 @@
+.cocktail-menu__inner {
+  padding: 152px 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cocktail-menu__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-card__title {
+  font-family: $font-cormorant;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  margin-bottom: 48px;
+}
+.menu-item__content {
+  width: 412px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.content-title {
+  font-family: $font-cormorant;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: $font-color-gold;
+}
+.content-price {
+  font-family: $font-cormorant;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 32px);
+    height: 1px;
+    width: 119px;
+    background-color: white;
+  }
+}
+.content-descr {
+  font-family: $font-open;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: $font-color-gray;
+}
+.menu-item {
+  margin-bottom: 40px;
+}
+.cocktail-menu__content {
+  img {
+    margin: 0 32px;
+  }
+  margin-bottom: 64px;
+}

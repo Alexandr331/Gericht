@@ -1,0 +1,22 @@
+.section__video {
+  position: relative;
+  &::before {
+    content: url(/_next/static/media/rounded-logo.9f579141.svg);
+    position: absolute;
+    top: 147px;
+    left: 197px;
+
+    z-index: 10;
+  }
+}
+
+.play__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  background: transparent;
+  &:hover {
+    background: inherit;
+  }
+}

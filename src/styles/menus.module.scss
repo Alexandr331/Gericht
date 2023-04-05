@@ -1,0 +1,47 @@
+.section__menus {
+  // background-image: url(../assets/images/cocktail-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+
+  position: relative;
+  &::before {
+    content: url(../assets/icons/rounded-logo.svg);
+    position: absolute;
+    top: 10px;
+    left: 151px;
+  }
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.menus__inner {
+  padding: 261px 25px 262px;
+}
+
+.btn-text {
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+  color: $font-color-white;
+  font-family: $font-cormorant;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: $min-line-height;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+}
+.btn-text:hover {
+  background-color: transparent;
+}
+
+.menu__selection-box {
+  display: flex;
+  flex-direction: column;
+  gap: 64px 0;
+}

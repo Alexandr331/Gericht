@@ -1,0 +1,33 @@
+.section__about {
+  background-image: url(../assets/images/main-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.about__inner {
+  position: relative;
+  padding: 329px 190px 328px;
+  img {
+    z-index: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .g {
+    top: 264px;
+  }
+  .knife {
+    top: 120px;
+  }
+  display: flex;
+  gap: 0 254px;
+}
+.box__history, .box__about {
+  z-index: 5;
+}
+.box__about {
+  text-align: right;
+}
+

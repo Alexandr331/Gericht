@@ -1,0 +1,53 @@
+
+.section__laurels {
+  background-image: url(../assets/images/main-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.laurels__inner {
+  padding: 128px 190px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.laurels__image {
+  position: relative;
+  &::after {
+    content: url(../assets/images/g-white.png);
+    position: absolute;
+    bottom: 0;
+    left: -72px;
+  }
+}
+
+.laurels__content {
+  margin-right: 183px;
+}
+
+.laurels-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 64px 32px;
+}
+
+.laurel-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.laurel-item__content {
+  margin: 0;
+  width: 219px;
+  dl {
+    padding: 0;
+    dt {
+      font-size: 23px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.blog__inner {
+  padding: 152px 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__blog {
+  position: relative;
+  &::after {
+    content: url(../assets/icons/rounded-logo.svg);
+    position: absolute;
+    bottom: 123px;
+    right: 90px;
+  }
+}
+
+.blog-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  .blog-item {
+    flex: 1;
+  }
+}
+
+.blog-item {
+  margin-bottom: 64px;
+  &:hover {
+    text-decoration: underline;
+  }
+  .info {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  img {
+    margin-bottom: 24px;
+  }
+  h3 {
+    font-family: $font-cormorant;
+    color: $font-color-gold;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+  }
+  p{
+    font-family: $font-open;
+    color: $font-color-gray;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+  }
+  span {
+    font-family: $font-cormorant;
+    color: $font-color-gold;
+    font-weight: 700;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+  }
+}

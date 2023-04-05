@@ -1,0 +1,22 @@
+.section__reserve {
+  position: relative;
+  &::before {
+    content: url(../assets/icons/rounded-logo.svg);
+    position: absolute;
+    top: -19px;
+    right: 151px;
+  }
+}
+
+.reserve__inner {
+  padding: 157px 158px 152px;
+}
+.reserve-box {
+  padding: 48px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0C0C0C;
+  border: 1px solid rgba(220, 202, 135, 0.2);
+  box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+}

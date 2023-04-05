@@ -1,0 +1,14 @@
+.section__contact {
+  position: relative;
+  max-height: 290px;
+  &::before {
+    content: url(/_next/static/media/rounded-logo.9f579141.svg);
+    position: absolute;
+    top: -58px;
+    left: 106px;
+  }
+}
+
+.contact__inner {
+  padding: 113px 190px 0px;
+}

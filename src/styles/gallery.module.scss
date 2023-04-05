@@ -1,0 +1,38 @@
+.section__gallery {
+  background-image: url(../assets/images/main-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.gallery__inner {
+  padding: 129px 0 129px 190px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gallery__descr {
+  width: 491px;
+}
+.slider-box {
+  margin-left: 64px;
+  height: 447px;
+}
+.slider {
+  top: 0;
+  left: 0;
+  gap: 0 32px;
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  width: 745px;
+}
+.embla__slide {
+  flex: 0 0 301px;
+  min-width: 0;
+}

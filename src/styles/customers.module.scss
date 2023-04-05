@@ -1,0 +1,71 @@
+.customers__inner {
+  padding: 152px 190px;
+  display: flex;
+  flex-direction: column;
+  .section__title {
+    text-align: center;
+  }
+}
+
+.section__customers {
+  position: relative;
+  &::before {
+    content: url(/_next/static/media/rounded-logo.9f579141.svg);
+    position: absolute;
+    top: -51px;
+    right: 286px;
+  }
+}
+
+.customers__reviews-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 82px 0;
+}
+
+.review {
+  font-style: italic;
+}
+
+.customer-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  margin: auto 0 0;
+  width: 412px;
+  padding-left: 32px;
+  .descr {
+    margin-bottom: 0;
+  }
+  dl {
+    padding-top: 16px;
+    dt {
+      font-family: $font-cormorant;
+      font-size: 32px;
+      line-height: $min-line-height;
+      letter-spacing: 0.04em;
+      text-transform: capitalize;
+      color: $font-color-gold;
+    }
+    dd {
+      font-family: $font-open;
+      line-height: $max-line-height;
+      letter-spacing: 0.04em;
+      color: $font-color-gray;
+    }
+  }
+}
+
+.image-box {
+  position: relative;
+  &::after {
+    content: url(../assets/icons/quotes.svg);
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+    transform: translateY(50%);
+  }
+}
