@@ -1,33 +1,35 @@
+import { Scroll } from '@/ScrollProvider'
 import images from '@/assets/index.js'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 
 export const Header = (): JSX.Element => {
-
+  const ref = useRef(null)
   const [nav, setNav] = useState(false)
-
+  const {scrollY} = useContext(Scroll)
+  
   return (
-    <header className="header" id="header">
+    <header className="header" id="header" style={{ transform: `translateY(-${scrollY * 2}px)` }}>
       <div className="container">
         <div className="header__inner-header">
-          <div onClick={() => setNav(false)} className="logo">
-            <a href="#home" className="logo__link">Gerícht</a>
+          <div className="logo">
+            <Link onClick={() => setNav(false)} href="#home" className="logo__link">Gerícht</Link>
           </div>
           <div className="nav-container">
             <nav className="nav">
               <ul className="nav__list">
                 <li className="nav__list-item">
-                  <Link href="#" className="list-item__link link-hover">Home</Link>
+                  <Link href="#home" className="list-item__link link-hover">Home</Link>
                 </li>
                 <li className="nav__list-item">
                   <Link href="#" className="list-item__link link-hover">Pages</Link>
                 </li>
                 <li className="nav__list-item">
-                  <Link href="#" className="list-item__link link-hover">Contact Us</Link>
+                  <Link href="#contact" className="list-item__link link-hover">Contact Us</Link>
                 </li>
                 <li className="nav__list-item">
-                  <Link href="#" className="list-item__link link-hover">Blog</Link>
+                  <Link href="#blog" className="list-item__link link-hover">Blog</Link>
                 </li>
                 <li className="nav__list-item">
                   <Link href="#" className="list-item__link link-hover">Landing</Link>
@@ -50,10 +52,10 @@ export const Header = (): JSX.Element => {
               <nav className="nav">
                 <ul className="nav__list">
                   <li className="nav__list-item">
-                    <Link href="#home" className="list-item__link link-hover">Home</Link>
+                    <Link onClick={() => setNav(false)} href="#home" className="list-item__link link-hover">Home</Link>
                   </li>
                   <li className="nav__list-item">
-                    <Link href="#" className="list-item__link link-hover">Pages</Link>
+                    <Link  href="#" className="list-item__link link-hover">Pages</Link>
                   </li>
                   <li className="nav__list-item">
                     <Link onClick={() => setNav(false)} href="#contact" className="list-item__link link-hover">Contact Us</Link>

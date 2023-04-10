@@ -66,7 +66,7 @@
   }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1024px) {
   .section__customers {
     &::before {
       display: none;
@@ -87,6 +87,20 @@
         padding-left: 0;
         margin-bottom: 30px;
         text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .section__customers {
+    &::before {
+      display: none;
+    }
+  }
+  .customers__reviews-box  {
+    .card-item {
+      .content {
+        padding-top: 30px;
       }
     }
   }

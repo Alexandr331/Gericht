@@ -9,8 +9,10 @@
   padding-top: 128px;
   padding-bottom: 128px;
   display: flex;
-  img {
+  .chef {
     margin-right: 96px;
+    width: 100%;
+    height: 100%;
   }
 }
 .chef-content__descr {
@@ -38,12 +40,15 @@
   }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1024px) {
   .chef__inner {
-    padding: 0;
     img {
       display: none;
     }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .chef__inner {
   }
   .chef__content {
     padding-top: 0;

@@ -36,7 +36,7 @@
   h3 {
     font-weight: 400;
     font-family: $font-cormorant;
-    font-size: 32px;
+    @include adaptive-font(24, 32);
     letter-spacing: 0.04em;
     text-transform: capitalize;
     color: #F5EFDB;
@@ -46,7 +46,6 @@
   span 
   {
     font-family: $font-open;
-    font-size: 16px;
     line-height: 175%;
     letter-spacing: 0.04em;
     color: $font-color-gray;
@@ -78,7 +77,7 @@
     font-family: $font-cormorant;
     color: $font-color-gold;
     font-weight: 700;
-    font-size: 64px;
+    @include adaptive-font(46, 64);
     line-height: 130%;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -101,7 +100,7 @@
   gap: 0 16px;
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1440px) {
   .footer__inner {
     padding-top: 0px;
     #scroll {
@@ -115,7 +114,7 @@
     gap: 30px;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1160px) {
   .footer__info-box {
     flex-direction: column;
     justify-content: center;

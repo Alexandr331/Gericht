@@ -7,6 +7,7 @@ import kevin from '@/assets/icons/kevin-luo.svg';
 import insta from '@/assets/icons/insta.svg';
 import facebook from '@/assets/icons/facebook.svg';
 import twitter from '@/assets/icons/twitter.svg';
+import instaSlide from '@/assets/icons/insta-slide.svg';
 import close from '@/assets/icons/close.png';
 import open from '@/assets/icons/open.png';
 import g from '@/assets/images/G.svg';
@@ -72,4 +73,5 @@ export default {
   slider3,
   close,
   open,
+  instaSlide,
 } 

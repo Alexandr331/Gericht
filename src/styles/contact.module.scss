@@ -14,10 +14,20 @@
 }
 
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1024px) {
+  .inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .contact__inner {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    // padding-top: 0px;
+    // padding-bottom: 0px;
   }
   .reserve-box {
     text-align: center;
@@ -35,7 +45,7 @@
   }
   .contact__from {
     input {
-      margin-bottom: 64px;
+      // margin-bottom: 64px;
     }
   }
 }

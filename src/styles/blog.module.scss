@@ -65,23 +65,28 @@
   }
 }
 
-@media screen and (max-width: 1240px) {
-  .section__blog {
-    &::after {
-      display: none;
-    }
-  }
+@media screen and (max-width: 1024px) {
   .blog__inner {
     padding-top: 0px;
     padding-bottom: 0px;
   }
   .blog-box {
-    flex-direction: column;
     grid-template-columns: repeat(2, 1fr);
     img {
       width: 100%;
       height: 100%;
     }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .section__blog {
+    &::after {
+      display: none;
+    }
+  }
+  .blog-box {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

@@ -11,7 +11,6 @@ export const About = ({ classProp }: Props) => {
       <div className="container">
         <div className="about__inner inner">
             <Image className="g" src={images.g} alt="g" />
-            <Image className="knife" src={images.knife} alt="knife" />
             <div className="box__about">
               <Title classProp="spoon spoon-left">About Us</Title>
               <p className="descr">
@@ -23,6 +22,7 @@ export const About = ({ classProp }: Props) => {
                 </Button>
 
             </div>
+            <Image className="knife" src={images.knife} alt="knife" />
             <div className="box__history">
               <Title classProp="spoon">Our History</Title>
               <p className="descr">

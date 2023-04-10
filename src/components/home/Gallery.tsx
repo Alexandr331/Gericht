@@ -3,43 +3,32 @@ import { Button } from "../shared/Button"
 import { Subtitle } from "../shared/Subtitle"
 import { Title } from "../shared/Title"
 import images from "@/assets/index"
-import useEmblaCarousel from "embla-carousel-react"
+import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react"
 import { Props } from "@/types"
+import Autoplay from 'embla-carousel-autoplay'
+import EmblaCarousel from "../shared/EmblaCarousel"
+
+
+const OPTIONS: EmblaOptionsType = { loop: true }
+const SLIDE_COUNT = 5
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export const Gallery = ({classProp}: Props): JSX.Element => {
 
-  const [emblaRef] = useEmblaCarousel({ loop: false })
+  const [emblaRef] = useEmblaCarousel({ loop: true })
 
   return (
     <section className={classProp}>
       <div className="container">
-        <div className="gallery__inner inner">
+        <div className="gallery__inner ">
           <div className="gallery__content">
             <Subtitle>Instagram</Subtitle>
             <Title classProp="gallery__title">Photo Gallery</Title>
             <p className="descr gallery__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
             <Button>View More</Button>
           </div>
+          <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </div>
-          <div className="slider-box embla" ref={emblaRef}>
-            <div className="slider embla__container">
-              <div className="embla__slide">
-                <Image src={images.slider1} alt="slider" />
-              </div>
-              <div className="embla__slide">
-                <Image src={images.slider1} alt="slider" />
-              </div>
-              <div className="embla__slide">
-                <Image src={images.slider1} alt="slider" />
-              </div>
-              <div className="embla__slide">
-                <Image src={images.slider1} alt="slider" />
-              </div>
-              <div className="embla__slide">
-                <Image src={images.slider1} alt="slider" />
-              </div>
-            </div>
-          </div>
       </div>
     </section>
   )

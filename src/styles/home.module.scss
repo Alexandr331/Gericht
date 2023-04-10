@@ -34,23 +34,19 @@
 }
 
 @media screen and (max-width: 1660px) {
-  .home__inner {
-    flex-direction: column;
-  }
+  // .home__inner {
+  //   flex-direction: column;
+  // }
   .inner-content {
     margin: 0;
   }
   .inner-content__title {
     font-size: calc(48px + 42 * ((100vw - 320px) / 1680));
   }
-}
-
-@media screen and (max-width: 1240px) {
   .home__inner {
     padding-bottom: 50px;
     gap: 50px;
     img {
-      // display: none;
       width: 60%;
       height: 60%;
     }
@@ -64,4 +60,11 @@
       display: none;
     }
   }
+}
+
+@media screen and (max-width: 1024px) {
+    .home__inner {
+    flex-direction: column;
+  }
+
 }

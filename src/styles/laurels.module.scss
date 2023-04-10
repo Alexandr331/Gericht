@@ -13,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .laurels__image {
@@ -33,7 +32,6 @@
 .laurels-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  // grid-template-rows: repeat(2, 1fr);
   gap: 64px 32px;
 }
 
@@ -46,6 +44,13 @@
     dt {
       font-size: 23px;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .laurels-box {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 }
 
@@ -68,23 +73,16 @@
     margin-right: 0;
     text-align: center;
   }
-  .laurels-box {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-  }
 }
 
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1440px) {
+  .laurel-item__content {
+    padding-left: 0;
+  }
   .laurels__inner {
     justify-content: space-between;
   }
   .laurels__image {
-    img {
-      display: block;
-      margin: 0 auto;
-      height: 90%;
-      width: 90%;
-    }
     &::after {
       display: none;
     }
