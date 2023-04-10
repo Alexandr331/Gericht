@@ -9,7 +9,7 @@ export const About = ({ classProp }: Props) => {
   return (
     <section className={classProp}>
       <div className="container">
-        <div className="about__inner">
+        <div className="about__inner inner">
             <Image className="g" src={images.g} alt="g" />
             <Image className="knife" src={images.knife} alt="knife" />
             <div className="box__about">

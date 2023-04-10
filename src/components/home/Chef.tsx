@@ -8,7 +8,7 @@ export const Chef = ({classProp}: Props) => {
   return (
     <section className={classProp}>
       <div className="container">
-        <div className="chef__inner">
+        <div className="chef__inner inner">
           <Image src={images.chef} alt="chef"/>
           <div className="chef__content">
             <Subtitle>Chef’s Word</Subtitle>

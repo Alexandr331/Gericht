@@ -28,12 +28,15 @@ export const CocktailMenu = ({classProp}: Props): JSX.Element => {
   return (
     <section className={classProp}>
       <div className="container">
-        <div className="cocktail-menu__inner">
+        <div className="cocktail-menu__inner inner">
           <Subtitle classProp="spoon-center">Menu that fits you palatte</Subtitle>
           <Title>Today’s Special</Title>
           <div className="cocktail-menu__content">
             <MenuCard data={wine} title="Wine & Beer" />
-            <Image src={images.shaker} alt="shaker"/>
+              <Image src={images.shaker} alt="shaker"
+                    sizes="(max-width: 768px) 100vw,
+                    (max-width: 1200px) 50vw,
+                    33vw"/>
             <MenuCard data={cocktails} title="Cocktails" />
           </div>
           <Button>View More</Button>

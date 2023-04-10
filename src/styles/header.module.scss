@@ -3,11 +3,19 @@
   padding: 32px 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
   img {
     margin: 0 50px;
   }
 }
-
+.logo {
+  z-index: 20;
+}
 .logo__link {
   font-family: $font-cormorant;
   font-weight: 700;
@@ -24,8 +32,7 @@
   gap: 0 32px;
 }
 .nav {
-  margin-left: 437px;
-  margin-right: 271px;
+  padding-right: 271px;
 }
 .header__book {
   font-weight: 600;
@@ -39,36 +46,78 @@
   letter-spacing: 0.05em;
   text-transform: capitalize;
 }
-.header__inner-content {
-  position: relative;
+.btn-box {
+  margin-left: auto;
+  position: absolute;
+  right: 20px;
+  top: 32px;
+  height: 32px;
+  width: 32px;
+  z-index: 15;
+  display: none;
+}
+
+.nav-container-mob {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 48px 190px 239px;
-  img {
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 10;
+  background-color: #0C0B08;
+}
+@media screen and (max-width: 1240px) {
+  .header {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 20;
+  }
+  .header__inner-header {
+    padding: 32px 10px;
+  }
+  .nav-container {
+    display: none;
+  }
+  .btn-box {
     display: block;
   }
-}
-.hashtags {
-  position: absolute;
-  left: -75px;
-  top: 454px;
-  font-family: $font-open;
-  font-size: 18px;
-  transform: rotate(-90deg);
-  display: flex;
-  gap: 0 40px;
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .nav {
+    padding-right: 0;
+    margin-bottom: 100px;
+    font-size: 50px;
+    img {
+      display: none;
+    }
+  }
+  .nav-container-mob {
+    .header__logs {
+      font-size: 50px;
+      margin-bottom: 50px;
+      .login {
+        font-size: 50px;
+      }
+      .reg {
+        font-size: 50px;
+      }
+    }
+    img {
+      display: none;
+    }
+    .header__book {
+      font-size: 50px;
+    }
+  }
 }
 
-.inner-content {
-  margin-right: 180px;
-}
-
-.inner-content__title {
-  font-family: $font-cormorant;
-  font-weight: 700;
-  font-size: 90px;
-  line-height: $min-line-height;
-  text-transform: capitalize;
-  color: $font-color-gold;
-  margin-bottom: 32px;
-}

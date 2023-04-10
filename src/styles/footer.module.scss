@@ -1,5 +1,6 @@
 .footer__inner {
-  padding: 305.5px 190px 144px;
+  padding-top: 305.5px;
+  padding-bottom: 144px;
   
   position: relative;
   .copy {
@@ -21,7 +22,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: contain;
-
+  z-index: 5;
 }
 .info__contact {
   span {
@@ -100,3 +101,26 @@
   gap: 0 16px;
 }
 
+@media screen and (max-width: 1240px) {
+  .footer__inner {
+    padding-top: 0px;
+    #scroll {
+      display: none;
+    }
+    .footer-logo {
+      display: inherit;
+    }
+  }
+  .footer__info-box {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .footer__info-box {
+    flex-direction: column;
+    justify-content: center;
+    .info__main {
+      margin: 0;
+    }
+  }
+}

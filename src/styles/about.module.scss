@@ -8,7 +8,8 @@
 
 .about__inner {
   position: relative;
-  padding: 329px 190px 328px;
+  padding-top: 329px;
+  padding-bottom: 328px;
   img {
     z-index: 0;
     position: absolute;
@@ -31,3 +32,18 @@
   text-align: right;
 }
 
+
+@media screen and (max-width: 1240px) {
+  .about__inner {
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    img {
+      display: none;
+    }
+    div {
+      text-align: center;
+    }
+  }
+}

@@ -13,7 +13,7 @@
   flex-wrap: wrap;
 }
 .gallery__descr {
-  width: 491px;
+  max-width: 491px;
 }
 .slider-box {
   margin-left: 64px;
@@ -35,4 +35,15 @@
 .embla__slide {
   flex: 0 0 301px;
   min-width: 0;
+}
+
+@media screen and (max-width: 1240px) {
+  .gallery__inner {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-content: center;
+  }
+  .gallery__content {
+    text-align: center;
+  }
 }

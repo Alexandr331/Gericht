@@ -20,3 +20,15 @@
     background: inherit;
   }
 }
+
+@media screen and (max-width: 1240px) {
+  .section__video {
+    &::before {
+      display: none;
+    }
+    // img {
+    //   width: 100%;
+    //   padding: 100%;
+    // }
+  }
+}

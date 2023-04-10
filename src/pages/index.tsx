@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Cormorant_Upright } from 'next/font/google'
 import { Header } from '@/components/home/Header'
 import { About } from '@/components/home/About'
 import { Reserve } from '@/components/home/Reserve'
@@ -14,9 +13,10 @@ import { Main } from '@/components/home/Main'
 import { Gallery } from '@/components/home/Gallery'
 import { Contact } from '@/components/home/Contact'
 import { Footer } from '@/components/home/Footer'
+import { Home } from '@/components/home/Home'
 
 
-export default function Home() {
+export default function AppContainer() {
   return (
     <>
       <Head>
@@ -26,6 +26,7 @@ export default function Home() {
       </Head>
       <Header />
       <Main>
+        <Home classProp="section__home" />
         <About classProp="section__about" />
         <Reserve classProp="section__reserve" />
         <Menus classProp="section__menus" />

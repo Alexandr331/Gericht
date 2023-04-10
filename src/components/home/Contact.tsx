@@ -5,9 +5,9 @@ import { Props } from "@/types"
 
 export const Contact = ({ classProp }: Props): JSX.Element => {
   return (
-    <section className={classProp}>
+    <section id="contact" className={classProp}>
       <div className="container">
-        <div className="contact__inner">
+        <div className="contact__inner inner">
           <FormBox
             subtitle="Newsletter"
             title="Subscribe to Our Newsletter"

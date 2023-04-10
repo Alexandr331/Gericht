@@ -1,5 +1,6 @@
 .cocktail-menu__inner {
-  padding: 152px 190px;
+  padding-top: 152px;
+  padding-bottom: 152px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,7 +20,6 @@
   margin-bottom: 48px;
 }
 .menu-item__content {
-  width: 412px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 9px;
@@ -34,6 +34,7 @@
   color: $font-color-gold;
 }
 .content-price {
+  padding-left: 192px;
   font-family: $font-cormorant;
   font-weight: 700;
   font-size: 23px;
@@ -45,7 +46,8 @@
     content: '';
     position: absolute;
     top: 50%;
-    right: calc(100% + 32px);
+    // right: calc(100% + 32px);
+    right: 50px;
     height: 1px;
     width: 119px;
     background-color: white;
@@ -66,3 +68,26 @@
   }
   margin-bottom: 64px;
 }
+
+@media screen and (max-width: 1240px) {
+  .cocktail-menu__inner {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .content-price {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cocktail-menu__content {
+    gap: 50px;
+    justify-content: center;
+    img {
+      display: none;
+    }
+  }
+}
+

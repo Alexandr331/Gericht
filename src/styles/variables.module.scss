@@ -10,3 +10,9 @@ $font-cormorant: 'Cormorant Upright', serif;
 $font-open: 'Open Sans', sans-serif;
 $min-line-height: 130%;
 $max-line-height: 175%;
+
+
+@mixin adaptive-font($minSize, $maxSize) {
+  $addSize: $maxSize - $minSize;
+  font-size: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / 1680));
+}

@@ -7,7 +7,7 @@ export const Reserve = ({ classProp }: Props): JSX.Element => {
   return (
     <section className={classProp}> 
       <div className="container">
-        <div className="reserve__inner">
+        <div className="reserve__inner inner">
           <FormBox
             subtitle="Reservations"
             title="Book A Table"

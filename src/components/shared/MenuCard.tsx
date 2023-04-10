@@ -3,7 +3,7 @@ import { MenuCardType } from "@/types"
 export const MenuCard = ({data, title}: MenuCardType): JSX.Element => {
   return (
     <article className="menu-card">
-    <div className="menu-card__title">{title}</div>
+    <h2 className="menu-card__title">{title}</h2>
     <div className="menu-card__content">
       {
         data.map((el, index) => {

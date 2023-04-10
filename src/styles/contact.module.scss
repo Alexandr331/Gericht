@@ -10,5 +10,32 @@
 }
 
 .contact__inner {
-  padding: 113px 190px 0px;
+  padding-top: 113px;
+}
+
+
+@media screen and (max-width: 1240px) {
+  .contact__inner {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .reserve-box {
+    text-align: center;
+  }
+  .inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section__contact {
+    position: initial;
+    max-height: fit-content;
+    &::before {
+      display: none;
+    }
+  }
+  .contact__from {
+    input {
+      margin-bottom: 64px;
+    }
+  }
 }

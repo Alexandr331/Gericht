@@ -21,9 +21,9 @@ export const Menus = ({classProp}: Props): JSX.Element => {
   
   return (
     <section className={classProp}>
-      <Image className="bg" src={slidesBg[imgBg]} alt="bg" />
+      {/* <Image className="bg" src={slidesBg[imgBg]} alt="bg" /> */}
       <div className="container">
-        <div className="menus__inner">
+        <div className="menus__inner inner">
           <div className="menu__selection-box">
             {
               menus.map((el, index) => {

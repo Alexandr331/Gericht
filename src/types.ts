@@ -29,12 +29,13 @@ interface cardItem {
   descr: string,
 }
 
-export type Card = {
+export type CardType = {
   img: StaticImageData | string,
   name?: string,
   review?: string,
-  position?: string
   descr?: string,
+  classProp?: string,
+  quotes?: boolean
 }
 export type MenuCardType = {
   data: cardItem[],

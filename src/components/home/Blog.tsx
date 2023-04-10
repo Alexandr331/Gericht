@@ -16,9 +16,9 @@ export const Blog = ({classProp}: Props) => {
   ]
 
   return (
-    <section className={classProp}>
+    <section id="blog" className={classProp}>
       <div className="container">
-        <div className="blog__inner">
+        <div className="blog__inner inner">
           <Subtitle classProp="spoon-center">Blogs</Subtitle>
           <Title>Gerícht updates</Title>
           <div className="blog-box">

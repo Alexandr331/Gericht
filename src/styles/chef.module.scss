@@ -6,7 +6,8 @@
   object-fit: contain;
 }
 .chef__inner {
-  padding: 128px 190px;
+  padding-top: 128px;
+  padding-bottom: 128px;
   display: flex;
   img {
     margin-right: 96px;
@@ -34,5 +35,18 @@
       letter-spacing: 0.04em;
       color: $font-color-gray;
     }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .chef__inner {
+    padding: 0;
+    img {
+      display: none;
+    }
+  }
+  .chef__content {
+    padding-top: 0;
+    text-align: center;
   }
 }

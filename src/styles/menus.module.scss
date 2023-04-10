@@ -1,5 +1,5 @@
 .section__menus {
-  // background-image: url(../assets/images/cocktail-bg.jpg);
+  background-image: url(../assets/images/cocktail-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,4 +44,21 @@
   display: flex;
   flex-direction: column;
   gap: 64px 0;
+}
+
+@media screen and (max-width: 1660px) {
+  .btn-text {
+    @include adaptive-font(36, 64);
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .menus__inner {
+    padding-top: 0px;
+  }
+  .section__menus {
+    &::before {
+      display: none;
+    }
+  }
 }

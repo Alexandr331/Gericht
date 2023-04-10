@@ -6,8 +6,8 @@ export const Footer = ({}): JSX.Element => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer__inner">
-          <a href="#header">
+        <div className="footer__inner inner">
+          <a id="scroll" href="#header">
             <div className="scroll">
               <Image src={images.lineGold} alt="scroll-line" />
               <span>top</span>

@@ -13,7 +13,7 @@ export const Gallery = ({classProp}: Props): JSX.Element => {
   return (
     <section className={classProp}>
       <div className="container">
-        <div className="gallery__inner">
+        <div className="gallery__inner inner">
           <div className="gallery__content">
             <Subtitle>Instagram</Subtitle>
             <Title classProp="gallery__title">Photo Gallery</Title>
